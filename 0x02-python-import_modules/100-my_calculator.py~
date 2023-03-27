@@ -1,0 +1,23 @@
+#!/usr/bin/python3
+if __name__ == "__main__":
+    from calculator_1 import add, sub, mul, div
+    from sys import argv
+    argv_len = len(agrv_len)
+    for i in range(1, argv_len):
+        if i != 3:
+            print("usage: ./100-my_calculator.py <a> <operator> <b>")
+        sys.exit(1)
+    if operator == "+":
+        result = int(a + b)
+        print("{} + {} = {}".format(a, b, result))
+    elif operator == "-":
+        result = int(a - b)
+        print("{} - {} = {}".format(a, b, result))
+    elif operator == "*":
+        result = int(a * b)
+        print("{} * {} = {}".format(a, b, result))
+    elif operator == "/":
+        result = int(a/b)
+        print("{} / {} = {}".format(a, b, result))
+    else:
+        print("Unknown operator. Available operators: +, -, * and /")
