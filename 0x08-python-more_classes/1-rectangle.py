@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-"""Class definition of Rectangle"""
+"""Class definition Rectangle"""
 
 
 class Rectangle:
-    """The function doesn't have any block of code"""
+    """The class is initialized with two parameters
+    
+    """
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
