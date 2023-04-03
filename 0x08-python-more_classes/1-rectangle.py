@@ -4,7 +4,7 @@
 
 class Rectangle:
     """The class is initialized with two parameters
-    
+
     """
     def __init__(self, width=0, height=0):
         self.width = width
@@ -23,7 +23,6 @@ class Rectangle:
             raise ValueError("height must be >= 0")
 
         self.__height = value
-
 
     @property
     def width(self):
