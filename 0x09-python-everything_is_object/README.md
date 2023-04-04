@@ -1,0 +1,1 @@
+Everthing isObject in Python
