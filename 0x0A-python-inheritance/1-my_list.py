@@ -3,6 +3,7 @@
 
 
 class MyList(list):
+    """empty class"""
     pass
 
     def print_sorted(self):
