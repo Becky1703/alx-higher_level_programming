@@ -20,8 +20,10 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
 
+
 class Rectangle(BaseGeometry):
     """inherited BaseGeometry"""
+
     def __init__(self, width, height):
         """Initializes a rectangle class
         Takes two arguments - width and height
