@@ -4,6 +4,7 @@ import json
 import csv
 import turtle
 
+
 class Base:
     """Base class that defines the base for all other classes.
 
@@ -12,7 +13,7 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
-        if id != None:
+        if id is not None:
             self.id = id
 
         else:
@@ -76,9 +77,9 @@ class Base:
     def save_to_file_csv(cls, list_objs):
         """ serialization in csv"""
         filename = cls.__name__ + ".csv"
-        with open (filename, 'w', newline="") as a_csvfile:
+        with open(filename, 'w', newline="") as a_csvfile:
             if list_objs is None or list_objs == []:
-               a_csvfile.write("[]")
+                a_csvfile.write("[]")
             else:
                 if cls.__name__ == "Rectangle":
                     fieldnames = ["id", "width", "height", "x", "y"]
@@ -125,7 +126,6 @@ class Base:
                 t.forward(rect.height)
                 t.left(90)
             t.hideturtle()
-
 
         t.color("#bb2e2d")
         for sq in list_squares:

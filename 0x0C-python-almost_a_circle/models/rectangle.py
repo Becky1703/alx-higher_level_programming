@@ -90,8 +90,9 @@ class Rectangle(Base):
     def __str__(self):
         """overwrites the str method"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
-                                                     self.x, self.y,
-                                                     self.width, self.height)
+                                                       self.x, self.y,
+                                                       self.width, self.height)
+
     def update(self, *args, **kwargs):
         """update the rectangle by adding positional arguments"""
         if args and len(args) != 0:
@@ -129,11 +130,11 @@ class Rectangle(Base):
                     self.y = v
 
     def to_dictionary(self):
-         """Returns the dictionary representation of a Rectangle"""
-         return {
-               "id": self.id,
-               "width": self.width,
-               "height": self.height,
-               "x": self.x,
-               "y": self.y
-         }
+        """Returns the dictionary representation of a Rectangle"""
+        return {
+                "id": self.id,
+                "width": self.width,
+                "height": self.height,
+                "x": self.x,
+                "y": self.y
+                }

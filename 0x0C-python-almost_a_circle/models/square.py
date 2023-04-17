@@ -21,7 +21,7 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         """updates the square"""
-        if args and len(args) !=0:
+        if args and len(args) != 0:
             a = 0
             for arg in args:
                 if a == 0:
