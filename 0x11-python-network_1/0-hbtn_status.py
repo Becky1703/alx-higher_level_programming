@@ -18,8 +18,7 @@ def fetch_and_display():
             print(e.reason)
         elif hasattr(e, "code"):
             print(e.code)
-            
+
 
 if __name__ == "__main__":
     fetch_and_display()
-
