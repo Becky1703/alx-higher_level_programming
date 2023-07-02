@@ -3,7 +3,8 @@
 import requests
 from sys import argv
 
-def display_request(url: str, email_arg:str):
+
+def display_request(url: str, email_arg: str):
     payload = {"email": email_arg}
     req = requests.post(url, data=payload)
     print(req.text)
