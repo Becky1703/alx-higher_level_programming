@@ -9,7 +9,7 @@ if __name__ == '__main__':
     with requests.get(URL) as response:
         reqst = response.json()
         try:
-            for i in range (0, 10):
+            for i in range(0, 10):
                 name = reqst[i].get('sha')
                 sha = reqst[i].get('commit').get('author').get('name')
                 print('{}: {}'.format(name, sha))
